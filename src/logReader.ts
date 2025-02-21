@@ -82,7 +82,7 @@ export default class LogReader {
             }
         },
         (line: string) => {
-            const match = line.match(/([0-9\.\: ]*) Log        -  \[VRC Camera\] Took screenshot to\: (.*)/);
+            const match = line.match(/([0-9\.\: ]*) Debug      -  \[VRC Camera\] Took screenshot to\: (.*)/);
             if (match) {
                 const DateTime = match[1].replaceAll('.', ':');
 
